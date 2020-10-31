@@ -7,7 +7,7 @@
 
 /*### Accent*/
 
---cyan: hsl(176, 68%, 64%); /* (inside call-to-action gradient)*/
+--cyan: hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
 --blue: hsl(198, 60%, 50%); /*(inside call-to-action gradient):*/ 
 
 /*### Neutral*/
@@ -34,6 +34,7 @@ body{
     font-size: 14px;
     color: var(--white);
     font-family: 'Open Sans', sans-serif;
+
     /*font-family: 'Raleway', sans-serif;*/
 }
 .main {
@@ -47,14 +48,53 @@ body{
 }
 
 h1{
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+}
+.header__info > p{
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 0;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+
 }
 .items{
     display: flex;
     margin: 30px auto;
 
 }
+
+.items_text{
+    margin: 20px auto;
+}
+.flex__info{
+    margin: 0 20px;
+}
+
+.flex__info h2{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.flex__info p{
+    font-size: 16px;
+    
+    font-weight: 400;
+    padding: 15px 0;
+}
+.btn{
+    color: #62E0D9;
+}
+
 
 .align-start {
 	align-items: flex-start;
@@ -84,4 +124,55 @@ h1{
 }
 .card >p{
     padding: 30px 0;
+}
+input{
+    flex: 0.7;
+    border: 1px solid hsl(243, 87%, 12%);
+	border-radius: 2px;
+	font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    padding: 15px;
+}
+button{
+    background-color: var(--blue);
+    border-radius: 40px;
+    padding: 20px 0;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    width: 100%;
+    max-width: 300px;
+
+
+}
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--dark-blue-testimonials-background);
+    text-align: center;
+    
+
+}
+.testimonials input{
+    flex: 0.7;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+.btn_1{
+    flex: 0.3;
+    background-color: var(--blue);
+    border-radius: 30px; 
+   
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
 }
