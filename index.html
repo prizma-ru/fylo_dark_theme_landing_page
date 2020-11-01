@@ -8,7 +8,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.
   png">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./style/style.css">
 
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
@@ -28,75 +29,79 @@
 
 <body>
   <!--секция меню и Лого-->
-  <header class="header">
-    <div class="container">
-      <nav class="header__menu">
-        <img class="header__logo" src="./img/logo.svg" alt="Logo">
-        <ul>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Sign In</a></li>
+  <section class="section_1">
+    <header class="header">
+      <div class="container">
+        <nav class="header__menu">
+          <img class="header__logo" src="./img/logo.svg" alt="Logo">
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Sign In</a></li>
 
-        </ul>
-      </nav>
-      <!--секция меню и Лого-->
-      <div class="header__img">
-        <img src="./img/illustration-intro.png" alt="">
+          </ul>
+        </nav>
+        <!--секция меню и Лого-->
+        <div class="header__img">
+          <img src="./img/illustration-intro.png" alt="">
+        </div>
+        <div class="header__info">
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p>Fylo stores all your most important files in one secure location. Access them wherever
+            you need, share and collaborate with friends family, and co-workers.</p>
+          <button class="btn_0">Get Started</button>
+        </div>
       </div>
-      <div class="header__info">
-        <h1>All your files in one secure location, accessible anywhere.</h1>
-        <p>Fylo stores all your most important files in one secure location. Access them wherever
-          you need, share and collaborate with friends family, and co-workers.</p>
-        <button>Get Started</button>
-      </div>
+    </header>
+  </section>
+  <section class="section_2">
+
+    <div class="container">
+      <main class="main">
+        <div class="items">
+          <div class="items__img">
+            <img src="./img/icon-access-anywhere.svg" alt="">
+          </div>
+          <div class="items__text">
+            <h3>Access your files, anywhere</h3>
+            <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you
+              everywhere.</p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items__img">
+            <img src="./img/icon-security.svg" alt="">
+          </div>
+          <div class="items__text">
+            <h3>Security you can trust</h3>
+            <p>2-factor authentication and user-controlled encryption are just a couple of the security
+              features we allow to help secure your files.</p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items__img">
+            <img src="./img/icon-collaboration.svg" alt="">
+          </div>
+          <div class="items__text">
+            <h3>Real-time collaboration</h3>
+            <p>Securely share files and folders with friends, family and colleagues for live collaboration.
+              No email attachments required..</p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items__img">
+            <img src="./img/icon-any-file.svg" alt="">
+          </div>
+          <div class="items__text">
+            <h3>Store any type of file</h3>
+            <p> Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
+              file types to be securely stored and shared.</p>
+          </div>
+        </div>
+      </main>
     </div>
-  </header>
-  <div class="container">
-    <main class="main">
-      <div class="items">
-        <div class="items__img">
-          <img src="./img/icon-access-anywhere.svg" alt="">
-        </div>
-        <div class="items__text">
-          <h3>Access your files, anywhere</h3>
-          <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you
-            everywhere.</p>
-        </div>
-      </div>
-      <div class="items">
-        <div class="items__img">
-          <img src="./img/icon-security.svg" alt="">
-        </div>
-        <div class="items__text">
-          <h3>Security you can trust</h3>
-          <p>2-factor authentication and user-controlled encryption are just a couple of the security
-            features we allow to help secure your files.</p>
-        </div>
-      </div>
-      <div class="items">
-        <div class="items__img">
-          <img src="./img/icon-collaboration.svg" alt="">
-        </div>
-        <div class="items__text">
-          <h3>Real-time collaboration</h3>
-          <p>Securely share files and folders with friends, family and colleagues for live collaboration.
-            No email attachments required..</p>
-        </div>
-      </div>
-      <div class="items">
-        <div class="items__img">
-          <img src="./img/icon-any-file.svg" alt="">
-        </div>
-        <div class="items__text">
-          <h3>Store any type of file</h3>
-          <p> Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
-            file types to be securely stored and shared.</p>
-        </div>
-      </div>
-    </main>
-    </div>
-  
-  <Section>
+  </section>
+  <Section class="section_3">
     <div class="container">
       <div class="flex">
         <div class="flex__img">
@@ -110,7 +115,7 @@
             collaboration. No email attachments required.</p>
           <div class="flex__form">
             <!-- <input type="text" placeholder="Enter you email">-->
-            <a class="btn" href="#">See how Fylo works</a>
+            <a class="btn_3" href="#">See how Fylo works</a>
             <img src="./img/icon-arrow.svg" alt="">
           </div>
         </div>
@@ -118,7 +123,7 @@
 
       </div>
   </Section>
-  <Section>
+  <Section class="section_4">
     <div class="container">
       <div class="flex">
         <div class="card">
@@ -155,22 +160,30 @@
           </div>
         </div>
       </div>
+      <div class="registration">
+        <h2>Get early access today</h2>
+        <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions,
+          our support team would be happy to help you.</p>
+        <form>
+          <input type="email" placeholder="example@example.com">
+          <button class="btn_1">Get Started For Free</button>
+        </form>
+      </div>
   </Section>
-  <div class="testimonials">
-    <h2>Get early access today</h2>
-    <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-    <form>
-      <input type="email" placeholder="example@example.com">
-      <button class="bat_1">Get Started For Free</button>
-    </form>
-  </div>
 
-  
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
 
   Get Started For Free
 
@@ -192,12 +205,12 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Dmitry clotov</a>.
     </p>
   </footer>
 
-.
-  
+  .
+
 </body>
 
 </html>

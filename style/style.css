@@ -30,12 +30,32 @@
     padding: 30px;
 }
 body{
-    background-color: var(--dark-blue-main-background);
+    /*background-color: var(--dark-blue-testimonials-background);*/
     font-size: 14px;
     color: var(--white);
     font-family: 'Open Sans', sans-serif;
 
     /*font-family: 'Raleway', sans-serif;*/
+}
+.section_1{
+  
+        background: var(--dark-blue-testimonials-background) url(../img/bg-curvy-desktop.svg) center bottom no-repeat;
+        background-size: 100%;
+}
+.section_2{
+    background-color: var(--dark-blue-main-background);
+
+}
+.section_3{
+    background-color: var(--dark-blue-main-background);
+}
+.section_4{
+    background-color: var(--dark-blue-main-background);
+    position: relative;
+    
+}
+.section_5{
+    background-color: var(--dark-blue-main-background);
 }
 .main {
     display: flex;
@@ -87,7 +107,13 @@ nav ul li{
 nav ul a{
     color: var(--white);
     font-family: 'Raleway', sans-serif;
-	text-decoration: none;
+    text-decoration: none;
+    opacity: 0.7;
+}
+nav ul a:hover{
+    color: var(--white);
+    text-decoration: underline;
+    opacity: 1;
 }
 
 .header__img, .header__info{
@@ -131,7 +157,7 @@ h1{
     font-weight: 400;
     padding: 15px 0;
 }
-.btn{
+.btn_3{
     color: #62E0D9;
 }
 
@@ -143,11 +169,13 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+ 
+    
 }
 .card{
     display: flex;
     flex-wrap: wrap;
-    margin: 10px 20px;
+    margin: 10px 20px 300px;
     padding: 20px;
     align-items: center; /*выравнивание по центру*/
     background-color: var(--dark-blue-testimonials-background);
@@ -187,7 +215,7 @@ input{
     font-size: 14px;
     padding: 15px;
 }
-button{
+.btn_0{
     background-color: var(--blue);
     border-radius: 40px;
     padding: 20px 0;
@@ -198,21 +226,29 @@ button{
     color: #ffffff;
     width: 100%;
     max-width: 300px;
-
-
+    cursor: pointer;
 }
-.testimonials{
+.btn_0:hover{
+    background-color: var(--cyan);
+    
+}
+.registration{
+    position: absolute;
+    
+    left:50%;
+    transform:translate(-50%, -50%);
+
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    background-color: var(--dark-blue-testimonials-background);
+    background-color: var(--dark-blue-intro-email-sign-background);
     text-align: center;
     
 
 }
-.testimonials input{
+.registration input{
     flex: 0.7;
     border-radius: 30px;
     font-size: 16px;
