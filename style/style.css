@@ -39,9 +39,37 @@ body{
 }
 .main {
     display: flex;
-    align-items: center;
-	flex-wrap: wrap; /*flex-wrap задает правила вывода flex-элементов —  в одну строку или в несколько, с переносом блоков. Если перенос разрешен, то возможно задать направление, в котором выводятся блоки.*/
+    flex-wrap: wrap; /*flex-wrap задает правила вывода flex-элементов —  в одну строку или в несколько, с переносом блоков. Если перенос разрешен, то возможно задать направление, в котором выводятся блоки.*/
+    /*разрешаем переносить блоки на новую строку если они не помещаются в наш контейнер*/
+    margin: 95px 0;
 }
+.items{
+    width: 50%; /*ширина блока 1/2*/
+    padding: 0 80px;
+    margin: 50px 0; /*отступы сверху и снизу*/
+    text-align: center; /*делаем все по центру*/
+    
+}
+.items__text h3{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.items__text p{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: 0.7;
+    
+}
+
+
+.items__img {
+    margin-bottom: 25px; /*делаем внешний отступ от картинки вниз*/
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -87,17 +115,9 @@ h1{
     margin: 0 auto;
 
 }
-.items{
-    display: flex;
-    margin: 30px auto;
 
-}
-
-.items_text{
-    margin: 20px auto;
-}
 .flex__info{
-    margin: 0 20px;
+    margin: 0 50px;
 }
 
 .flex__info h2{
@@ -136,11 +156,12 @@ h1{
     box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
     border-radius: 5px;
 }
-.flex .card img{
+.card div > img{
     border-radius: 50%;
     height: 25px;
     margin: 0 15px 0 15px;
     width: 25px;
+    
 }
 .card >p{
     padding: 30px 0;
